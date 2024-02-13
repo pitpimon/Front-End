@@ -18,7 +18,7 @@ app.get('/', async(req,res)=>{
     res.render("books",{books:respones.data})
    }catch(err){
     console.error(err)
-    res.status(500).send('Error')
+    res.status(500).send('Error1')
    }
 })
 app.get('/book/:id',async(req,res)=>{
@@ -27,7 +27,7 @@ app.get('/book/:id',async(req,res)=>{
         res.render("book",{book:respones.data})
        }catch(err){
         console.error(err)
-        res.status(500).send('Error')
+        res.status(500).send('Error2')
        }
 })
 app.get('/create',(req,res)=>{ // show create desktop
@@ -40,7 +40,7 @@ app.post('/create',async(req,res)=>{
     res.redirect('/')
    }catch(err){
     console.error(err)
-    res.status(500).send('Error')
+    res.status(500).send('Error3')
    }
 })
 app.get('/update/:id',async(req,res)=>{
@@ -50,7 +50,7 @@ app.get('/update/:id',async(req,res)=>{
             res.render('update',{book: respones.data})
   } catch(err){
       console.error(err)
-      res.status(500).send('Error')
+      res.status(500).send('Error4')
     }
 })
 app.post('/update/:id',async(req,res)=>{
@@ -60,7 +60,7 @@ app.post('/update/:id',async(req,res)=>{
     res.redirect('/')
    }catch(err){
     console.error(err)
-    res.status(500).send('Error')
+    res.status(500).send('Error5')
    }
 })
 app.get('/delete/:id',async(req,res)=>{
@@ -69,7 +69,7 @@ app.get('/delete/:id',async(req,res)=>{
     res.redirect('/')
    }catch(err){
     console.error(err)
-    res.status(500).send('Error')
+    res.status(500).send('Error6')
    }
 })
 app.listen(5500,()=> console.log(`Listening on port 5500`))
