@@ -7,7 +7,7 @@ var bodyParser = require('body-parser')
 //const base_url = "http://node58833-env-pitpimon.proen.app.ruk-com.cloud" //sqlite
 
 const base_url = "https://node58959-env-pitpimon.proen.app.ruk-com.cloud"
-
+//
 
 app.set('view engine', 'ejs')
 app.use(bodyParser.json())
