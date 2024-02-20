@@ -3,10 +3,10 @@ const axios = require('axios')
 const app = express()
 var bodyParser = require('body-parser')
 
-//const base_url = "http://localhost:3000"
+const base_url = "http://localhost:3000"
 //const base_url = "http://node58833-env-pitpimon.proen.app.ruk-com.cloud" //sqlite
 
-const base_url = "http://node58833-env-pitpimon.proen.app.ruk-com.cloud" //api-noderest
+//const base_url = "http://node58833-env-pitpimon.proen.app.ruk-com.cloud" //api-noderest
 
 
 
